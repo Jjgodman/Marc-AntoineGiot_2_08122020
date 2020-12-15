@@ -11,56 +11,58 @@
 
     <body>
 
-        <div id="bloc_page">
 
-            
-            <Header>
-                <div id="logo">
-                    <a href="Reservia.html">
-                        <img src="images/logo/Reservia.svg" alt="logo"/>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#"> S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </Header>
+        <Header>
+            <div id="logo">
+                <a href="Reservia.html">
+                    <img src="images/logo/Reservia.svg" alt="logo"/>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#logements">Hébergements</a>
+                    <a href="#activites">Activités</a>
+                    <a href="#"> S'inscrire</a>
+                </ul>
+            </nav>
+        </Header>
+
+
+        <div id="bloc_page">
 
 
             <div id="selection">
                 <div id="intitule">
-                    <h1>Trouvez votre hébergments pour des vacances de rêve</h1>
+                    <h1>Trouvez votre hébergment pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div id="recherche_ville">
                     <input type="image" id="localisation"  alt="localisation" src="images/icon/localisation.svg">             
-                    <input type="search" id="search" name="search" placeholder  ="Marseille, France">
+                    <input type="search" id="bar_de_recherche" name="bar_de_recherche" placeholder  ="Marseille, France">
                     <input type="submit" id="recherche" value="Rechercher">
                 </div>
                 <div id="filtres">
-                    <h2>Filtres</h2>
-                    <div id="economique">
+                    <h2 id="nom">Filtres</h2>
+                    <div class="filtre" id="economique">
                         <img src="images/icon/billet.svg" alt="economique"/>
                         <h2>Économique</h2>
                     </div>
-                    <div id="familial">
+                    <div class="filtre" id="familial">
                         <img src="images/icon/enfant.svg" alt="familial"/>
                         <h2>Familial</h2>
                     </div>
-                    <div id="romantique">
+                    <div class="filtre" id="romantique">
                         <img src="images/icon/coeur.svg" alt="romantique"/>
                         <h2>Romantique</h2>
                     </div>
-                    <div id="animaux">
+                    <div id="animaux" class="filtre">
                         <img src="images/icon/chien.svg" alt="animaux_autorisés"/>
                         <h2>Animaux autorisé</h2>
                     </div>
                 </div>
                 <div id="info">
-                    <p><img src="images/icon/info.svg" alt="info"/>Plus de 500 logements sont disponibles dans cette cille</p>
+                    <img src="images/icon/info.svg" alt="info"/>
+                    <p>Plus de 500 logements sont disponibles dans cette cille</p>
                 </div>
             </div>
 

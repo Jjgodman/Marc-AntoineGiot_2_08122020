@@ -7,30 +7,245 @@
 
 }
 
-#logements a img {
-	max-width: 20px;
-	height: auto;
-}
-input[id="localisation"]
+@font-face
 {
-    max-width: 10px;
-	height: auto;
+    font-family:'Raleway',ExtraBold, sans-serif;
+    src: url(police/Raleway.ttf)
 }
 
-#filtres img
+
+/*generique pout toute la page*/
+
+
+#bloc_page
 {
-    max-width: 20px;
-	height: auto;
+    font-family: Raleway;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 140px;
+}
+
+h1
+{
+    font-size: 20px;
+}
+
+h2
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*header*/
+
+
+#logo
+{
+    margin-left: 35px;
+    justify-content: left;
+}
+
+header
+{
+    margin-bottom: 100px;
+    font-family: Raleway;
+    justify-content:space-between ;
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 8px 8px #ededed;
+}
+
+nav a
+{
+    text-decoration:none;
+    padding: 50px 35px 36px 35px;
+    transition: background-color 200ms;
+    color: #0065FC;
+}
+
+nav a[href="#"]
+{
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+nav a:focus, nav a:hover
+{
+    background-color: #DEEBFF ;
+    transition: background-color 200ms;
+}
+
+nav a:visited
+{
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+/*generique pour la partie de recherche*/
+
+
+#selection p
+{
+    font-size: 14px;
+}
+
+#selection
+{
+    line-height: 80%;
+}
+
+
+
+
+
+/*bar de recherche*/
+
+
+#recherche_ville
+{
+    background-color: white;
+    height: 40px;
+    width: 365px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    font-family: Raleway;
+    margin-top: 20px;
+}
+
+#localisation
+{
+    padding: 10px 15px;
+    background-color: #F2F2F2;
+}
+
+#bar_de_recherche
+{
+    border:none;
+    width: 205px;
+    padding-left: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#recherche
+{
+    background-color: #0065FC;
+    width: 120px;
+    border:none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#recherche:active
+{
+    background-color: #0065fcc0;
+}
+
+
+
+
+/*filtres de recherche*/
+
+
+#filtres
+{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.filtre
+{
+    display: flex;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+    padding-right: 50px;
+    height: 40px;    
+    transition:  background-color 400ms;
+}
+
+.filtre img
+{
+    background-color: #DEEBFF;
+    padding: 5px 5px;
+    border:5px #ffffff00 solid;
+    border-radius: 20px;
+}
+
+
+.filtre:hover, .filtre:focus
+{
+    background-color: #DEEBFF;
+    transition:  background-color 400ms;
+}
+
+.filtre h2 
+{
+    position: relative;
+    white-space: nowrap;
+    left: 15px;
+    top: 1px;
+}
+
+
+
+
+
+/*petite infi*/
+
+
+#info
+{
+    padding: 20px 0px;
+    display: flex;
 }
 
 #info img
 {
-    max-width: 20px;
+    background-color: #0065FC;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+/*gestion de la taille des images*/
+
+
+#logements img, #filtres img, #info img
+{
+	max-width: 20px;
 	height: auto;
 }
 
-img[src="images/icon/populaire.svg"]
+input[id="localisation"]
 {
-    max-width: 20px;
+    max-width: 10px;
 	height: auto;
 }
