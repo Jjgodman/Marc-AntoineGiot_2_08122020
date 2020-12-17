@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <!--<link rel="stylesheet" media="screen and (max-width: 768px)" href="petite_resolution.css" />-->
         <title>Reservia</title>
     </head>
 
@@ -12,24 +13,25 @@
     <body>
 
 
-        <Header>
-            <div id="logo">
-                <a href="Reservia.html">
-                    <img src="images/logo/Reservia.svg" alt="logo"/>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <a href="#logements">Hébergements</a>
-                    <a href="#activites">Activités</a>
-                    <a href="#"> S'inscrire</a>
-                </ul>
-            </nav>
-        </Header>
+        
 
 
         <div id="bloc_page">
 
+            <Header>
+                <div id="logo">
+                    <a href="Reservia.html">
+                        <img src="images/logo/Reservia.svg" alt="logo"/>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="#anchor_logements">Hébergements</a>
+                        <a href="#anchor_activités">Activités</a>
+                        <a href="#" id="inscription"> S'inscrire</a>
+                    </ul>
+                </nav>
+            </Header>
 
             <div id="selection">
                 <div id="intitule">
@@ -66,63 +68,67 @@
                 </div>
             </div>
 
-
+            <span class="anchor" id="anchor_logements"></span>
             <div id="logements">
                 <div id="hebergements">
                     <h1>Hébergement à Marseille</h1>
                     <div class="appartements">
-                        <a href="#">
-                            <h3>Auberge la Cannebière</h3>
-                            <p>Nuits à partir de <strong>25€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <h3>Hôtel du port</h3>
-                            <p>Nuits à partir de 52<strong>€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <h3>Hôtel Les mouettes</h3>
-                            <p>Nuits à partir de 76<strong>€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <h3>Hôtel de la mer</h3>
-                            <p>Nuits à partir de 46<strong>€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <h3>Auberge Le panier</h3>
-                            <p>Nuits à partir de <strong>23€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <h3>Hôtel chez Amina</h3>
-                            <p>Nuits à partir de 96<strong>€</strong></p>
-                            <div class="note">
-                                <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/>
-                            </div>
-                        </a>
-                    </div>
+                        <div class="appartement">
+                            <a href="#" id="cannebière">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuits à partir de <strong>25€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
+                                </div>
+                            </a>
+                            <a href="#" id="port">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuits à partir de 52<strong>€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/>
+                                </div>
+                            </a>
+                            <a href="#" id="mouettes">
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuits à partir de 76<strong>€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
+                                </div>
+                            </a>
+                            <a href="#" id="mer">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuits à partir de 46<strong>€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
+                                </div>
+                            </a>
+                            <a href="#" id="panier">
+                                <h3>Auberge Le panier</h3>
+                                <p>Nuits à partir de <strong>23€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_vide.svg" alt="étoile_vide"/>
+                                </div>
+                            </a>
+                            <a href="#" id="amina">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuits à partir de 96<strong>€</strong></p>
+                                <div class="note">
+                                    <img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/><img src="images/icon/etoile_pleine.svg" alt="étoile_pleine"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                    
+                    <a href="#" id="plus">Afficher plus</a>
                 </div>
-                <a href="#">Afficher plus</a>
 
                 <div id="populaires">
-                    <h1>Les plus populaires</h1>
-                    <img src="images/icon/populaire.svg" alt="populaire"/>
+                    <div id="titre_populaire">
+                        <h1>Les plus populaires</h1>
+                        <img src="images/icon/populaire.svg" alt="populaire"/>
+                    </div>    
                     <div class="appartements">
                         <div class="appartement">
-                            <a href="#">
+                            <a href="#" id="soleil_matin">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuits à partir de 128<strong>€</strong></p>
                                 <div class="note">
@@ -131,7 +137,7 @@
                             </a>
                         </div>
                         <div class="appartement">
-                            <a href="#">
+                            <a href="#" id="coeur_eau">
                                 <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuits à partir de 71<strong>€</strong></p>
                                 <div class="note">
@@ -140,7 +146,7 @@
                             </a>
                         </div>
                         <div class="appartement">
-                            <a href="#">
+                            <a href="#" id="bleu_blanc">
                                 <h3>Hôtel Tout bleu et blanc</h3>
                                 <p>Nuits à partir de 68<strong>€</strong></p>
                                 <div class="note">
@@ -152,37 +158,38 @@
                 </div>
             </div>
 
+            <span class="anchor" id="anchor_activités"></span>
             <div id="activites">
                 <h1>Activités à Marseille</h1>
-                <div>
-                    <p>Vieux Port</p>
-                    <p>Fort de Pomègues</p>
-                    <p>Îles du Frioul</p>
-                    <p>Parc National des Calanques</p>
-                    <p>Notre-Dame-de-la-Garde</p>
-                    <p>Parc Longchamp</p>
+                <div id="activite">
+                    <a href="#" id="vieux_port"><h3>Vieux Port</h3></a>
+                    <a href="#" id="fort_pomegues"><h3>Fort de Pomègues</h3></a>
+                    <a href="#" id="frioul"><h3>Îles du Frioul</h3></a>
+                    <a href="#" id="calanques"><h3>Parc National des Calanques</h3></a>
+                    <a href="#" id="ndg"><h3>Notre-Dame-de-la-Garde</h3></a>
+                    <a href="#" id="parc_longchamp"><h3>Parc Longchamp</h3></a>
                 </div>
             </div>
-
-
-            <footer>
-                <div>
+        </div>
+        <footer>
+            <div id="menu_fin">
+                <div class="sous_menu_fin">
                     <h2>A propos</h2>
                     <a href="#">Fonctionnement du site</a>
                     <a href="#">Conditions générales de vente</a>
                     <a href="#">Données et confidentialité</a>
                 </div>
-                <div>
+                <div class="sous_menu_fin">
                     <h2>Nos hébergements</h2>
                     <a href="#">Charte qualité</a>
                     <a href="#">Soumettre votre hôtel</a>
                 </div>
-                <div>
+                <div class="sous_menu_fin">
                     <h2>Assistance</h2>
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>
                 </div>
-            </footer>
-        </div>
+            </div>    
+        </footer>
     </body>
 </html>
