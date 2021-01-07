@@ -13,7 +13,7 @@ body
     font-family: Raleway, Arial;
 }
 
-@media (max-width: 768px)
+@media (max-width: 850px)
 {
     body
     {
@@ -27,15 +27,22 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-top: 140px;
-    justify-content: center;
-    max-width: 100%;
+    width: 1200px;
 }
 
-@media (max-width: 1280px)
+@media (max-width: 1440px)
 {
     #bloc_page
     {
-        margin-left: 35px;
+        width: 780px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    #bloc_page
+    {
+        width: auto;
     }
 }
 
@@ -147,6 +154,8 @@ nav a:link
 
 
 
+
+
 /*bar de recherche*/
 
 
@@ -213,7 +222,6 @@ nav a:link
     border-radius: 50px;
     display: flex;
     height: 40px;
-    margin-left: 20px;
     padding-right: 30px;
     transition:  background-color 400ms;
 }
@@ -243,7 +251,19 @@ img[alt="economique"]
     white-space: nowrap;
 }
 
+@media (max-width: 1440px)
+{
+    #filtres
+    {
+        width: 780px;
+        flex-wrap: wrap;
+    }
 
+    .filtre
+    {
+        margin-bottom: 10px;
+    }
+}
 
 
 
@@ -253,7 +273,7 @@ img[alt="economique"]
 #info
 {
     display: flex;
-    padding: 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 #info img
@@ -275,11 +295,12 @@ img[alt="economique"]
     display: flex;
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1440px)
 {
     #logements
     {
         flex-direction: column;
+        width: 780px;
     }
 }
 
@@ -319,7 +340,7 @@ img[alt="economique"]
     width: 750px;
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1440px)
 {
     #hebergements
     {
@@ -373,10 +394,7 @@ img[alt="economique"]
     flex-direction: column;
     margin-left: 35px;
     padding: 25px 0 0 30px;
-    width: 200px;
 }
-
-
 
 #populaires .appartement a
 {
@@ -412,14 +430,29 @@ img[alt="economique"]
     padding: 5px 0 0 12px;
 }
 
-@media (max-width: 1280px)
+@media only screen and (max-width: 1440px)
 {
     #populaires
     {
-        background-color: aqua;
-        width: 200px;
-        flex-direction: row;   
+    margin-left: 0px;
+    width: 750px;
+    height: 250px;
     }
+    
+    #populaires .appartements
+    {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #bleu_blanc
+    {
+        visibility:hidden;
+        position:fixed;
+    }
+}
 
 
 
@@ -437,15 +470,17 @@ img[alt="economique"]
 #activites h1
 {
     padding-bottom: 5px;
+    width: 780px;
 }
 
 #activite a h3
 {
     background-color: white;
     bottom: -15px;
-    padding: 15px 100% 15px 15px;
+    padding: 15px 0 15px 15px;
     position: absolute;
     white-space: nowrap;
+    width: 235px;
 }
 
 #activite
@@ -455,16 +490,7 @@ img[alt="economique"]
     flex-wrap : wrap;
     height : 500px;
     justify-content : space-between;
-    width : 1260px;
-}
-
-@media only screen and (max-width: 1400px)
-{
-    #activite
-    {
-        width: 100%;
-        height: 1000px;
-    }
+    width : 1245px;
 }
 
 #activite a
@@ -501,7 +527,39 @@ img[alt="economique"]
     height : 235px;
 }
 
+@media only screen and (max-width: 1440px)
+{
+    #activites
+    {
+        width: 780px;
+    }
+    
+    #activite
+    {
+        width: 780px;
+        height: 1200px;
+    }
 
+    #activite a
+    {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 850px)
+{
+    #activites
+    {
+        width: 310px;
+    }
+
+    #activite
+    {
+        width: 310px;
+        height: auto;
+    }
+}
 
 
 /*pied de page*/
@@ -521,7 +579,7 @@ footer
 #menu_fin
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1200px;
 }
 
@@ -543,6 +601,22 @@ footer a:hover, footer a:focus
     transition: transform, color 200ms;
 }
 
+@media only screen and (max-width: 850px)
+{
+    #menu_fin
+    {
+        flex-direction: column;
+    }
+    .sous_menu_fin
+    {
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    footer a:hover, footer a:focus
+    {
+        transform: none;
+    }
+}
 
 
 
