@@ -13,14 +13,6 @@ body
     font-family: Raleway, Arial;
 }
 
-@media (max-width: 850px)
-{
-    body
-    {
-        background-color: crimson;
-    }
-}
-
 #bloc_page
 {
     display: block;
@@ -30,21 +22,8 @@ body
     width: 1200px;
 }
 
-@media (max-width: 1440px)
-{
-    #bloc_page
-    {
-        width: 780px;
-    }
-}
 
-@media (max-width: 850px)
-{
-    #bloc_page
-    {
-        width: auto;
-    }
-}
+
 
 
 h1
@@ -251,19 +230,6 @@ img[alt="economique"]
     white-space: nowrap;
 }
 
-@media (max-width: 1440px)
-{
-    #filtres
-    {
-        width: 780px;
-        flex-wrap: wrap;
-    }
-
-    .filtre
-    {
-        margin-bottom: 10px;
-    }
-}
 
 
 
@@ -293,15 +259,6 @@ img[alt="economique"]
 #logements
 {
     display: flex;
-}
-
-@media (max-width: 1440px)
-{
-    #logements
-    {
-        flex-direction: column;
-        width: 780px;
-    }
 }
 
 #logements p
@@ -340,13 +297,6 @@ img[alt="economique"]
     width: 750px;
 }
 
-@media (max-width: 1440px)
-{
-    #hebergements
-    {
-        margin-bottom: 30px;
-    }
-}
 
 
 #hebergements .appartement a
@@ -430,30 +380,6 @@ img[alt="economique"]
     padding: 5px 0 0 12px;
 }
 
-@media only screen and (max-width: 1440px)
-{
-    #populaires
-    {
-    margin-left: 0px;
-    width: 750px;
-    height: 250px;
-    }
-    
-    #populaires .appartements
-    {
-        
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    #bleu_blanc
-    {
-        visibility:hidden;
-        position:fixed;
-    }
-}
-
 
 
 
@@ -470,7 +396,6 @@ img[alt="economique"]
 #activites h1
 {
     padding-bottom: 5px;
-    width: 780px;
 }
 
 #activite a h3
@@ -527,40 +452,6 @@ img[alt="economique"]
     height : 235px;
 }
 
-@media only screen and (max-width: 1440px)
-{
-    #activites
-    {
-        width: 780px;
-    }
-    
-    #activite
-    {
-        width: 780px;
-        height: 1200px;
-    }
-
-    #activite a
-    {
-        margin: auto;
-        margin-bottom: 25px;
-    }
-}
-
-@media only screen and (max-width: 850px)
-{
-    #activites
-    {
-        width: 310px;
-    }
-
-    #activite
-    {
-        width: 310px;
-        height: auto;
-    }
-}
-
 
 /*pied de page*/
 
@@ -601,23 +492,6 @@ footer a:hover, footer a:focus
     transition: transform, color 200ms;
 }
 
-@media only screen and (max-width: 850px)
-{
-    #menu_fin
-    {
-        flex-direction: column;
-    }
-    .sous_menu_fin
-    {
-        padding-left: 30px;
-        padding-bottom: 20px;
-    }
-    footer a:hover, footer a:focus
-    {
-        transform: none;
-    }
-}
-
 
 
 
@@ -656,6 +530,13 @@ input[id="localisation"]
     max-width: 10px;
 }
 
+input[id="loupe"]
+{
+    height: auto;
+    max-width: 10px;
+    visibility: hidden;
+    position: fixed;
+}
 
 #cannebière
 {
@@ -777,3 +658,245 @@ input[id="localisation"]
     background-size: cover;
 }
 
+
+/*media querys*/
+@media (max-width: 1440px)
+{
+    #bloc_page
+    {
+        width: 780px;
+    }
+
+    #filtres
+    {
+        width: 780px;
+        flex-wrap: wrap;
+    }
+
+    .filtre
+    {
+        margin-bottom: 10px;
+    }
+
+    #logements
+    {
+        flex-direction: column;
+        width: 780px;
+    }
+
+    #hebergements
+    {
+        margin-bottom: 30px;
+    }
+
+    #populaires
+    {
+    margin-left: 0px;
+    width: 750px;
+    height: 250px;
+    }
+    
+    #populaires .appartements
+    {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #bleu_blanc
+    {
+        visibility:hidden;
+        position:fixed;
+    }
+
+    #activites
+    {
+        width: 780px;
+    }
+    
+    #activite
+    {
+        width: 780px;
+        height: 1200px;
+    }
+
+    #activite a
+    {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 850px)
+{
+    footer
+    {
+        margin-top: 35px;
+    }
+    #menu_fin
+    {
+        flex-direction: column;
+    }
+    .sous_menu_fin
+    {
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    footer a:hover, footer a:focus
+    {
+        transform: none;
+    }
+
+    #activites
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #activite
+    {
+        width: auto;
+        height: auto;
+    }
+
+    #activite a
+    {
+        height: 150px;
+        width: 300px;
+    }
+    #activites h1
+    {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    #activite a h3
+    {
+        width: 300px;
+    }
+
+    #populaires
+    {
+    margin-left: 0px;
+    width: auto;
+    height: 570px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 0%;
+    }
+
+    #titre_populaire
+    {
+        width: 300px;
+        margin: auto;
+        padding: 0;
+    }
+
+    #populaires .appartements
+    {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #bleu_blanc
+    {
+        visibility:visible;
+        position: initial;
+    }
+
+    #populaires .appartement 
+    {
+        width: 300px;
+        margin: auto;
+    }
+
+    #populaires .appartement a
+    {
+        margin-right: 0;
+    }
+
+    #logements
+    {
+        width: auto;
+        flex-direction: column-reverse;
+    }
+
+    #hebergements
+    {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: initial;
+    }
+
+    #hebergements .appartement a
+    {
+        width: 300px;
+        padding: 0;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    #cannebière, #port, #mouettes
+    {
+        background-size: cover;
+    }
+
+    #selection
+    {
+    width: 300px;
+    margin: auto;
+    }
+
+    #filtres
+    {
+        width: 300px;
+    }
+
+    #nom
+    {
+        width: 300px;
+    }
+
+    #recherche_ville
+    {
+        width: 300px;
+        margin: auto;
+    }
+
+    #recherche
+    {
+        visibility: hidden;
+        position: fixed;
+    }
+
+    #loupe
+    {
+        visibility: visible;
+        position: initial;
+        padding: 10px 15px;
+        background-color: #0065FC;
+        border-radius: 15px;
+    }
+
+    #bar_de_recherche
+    {
+        width: 220px;
+    }
+
+    #intitule h1
+    {
+        line-height:25px;
+    }
+
+    #bloc_page
+    {
+        width: auto;
+    }
+}
