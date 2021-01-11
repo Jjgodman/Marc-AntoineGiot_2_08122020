@@ -55,19 +55,24 @@ a
 /*header*/
 
 
+#mobile
+{
+    display: none;
+}
+
 #logo
 {
     margin-left: 35px;
 }
 
-header
+#destock
 {
     background-color: white;
     box-shadow: 0 8px 8px #ededed;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
-    padding-top: 35px;
+    padding-top: 20px;
     position: fixed;
     right: 0;
     top: 0;
@@ -75,17 +80,17 @@ header
     z-index: 1;
 }
 
+nav
+{
+    margin-top: 15px;
+}
+
 nav a
 {
-    padding: 50px 35px 36px 35px;
+    padding: 32px 35px 36px 35px;
     transition: background-color 200ms;
 }
 
-nav a[href="#"]
-{
-    font-weight: bold;
-    margin-right: 30px;
-}
 
 nav a:focus, nav a:hover
 {
@@ -93,21 +98,29 @@ nav a:focus, nav a:hover
     transition: background-color 200ms;
 }
 
-nav a:visited
+
+a[href="#anchor_logements"]
 {
     color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
-nav a:link
+a[href="#anchor_activités"]
+{
+    color: black;
+}
+
+#inscription
 {
     color: #0065FC;
+    font-weight: bold;
 }
 
 .anchor
 {
     display: block;
-    height: 125px;
-    margin-top: -125px;
+    height: 105px;
+    margin-top: -105px;
     visibility: hidden;
 }
 
@@ -244,8 +257,6 @@ img[alt="economique"]
 
 #info img
 {
-    background-color: #0065FC;
-    border-radius: 10px;
     margin: 8px 10px 15px 0px;
 }
 
@@ -507,8 +518,9 @@ footer a:hover, footer a:focus
 
 #info img
 {
-	height: auto;    
-	max-width: 20px;
+	height: 20px;    
+    max-width: 20px;
+    margin-top: 8px;
 }
 
 .note img
@@ -541,7 +553,6 @@ input[id="loupe"]
 #cannebière
 {
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-position: 0 -40%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -549,7 +560,6 @@ input[id="loupe"]
 #port
 {
     background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-position: 0 -40%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -557,7 +567,6 @@ input[id="loupe"]
 #mouettes
 {
     background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-position: 0 -40%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -573,7 +582,7 @@ input[id="loupe"]
 #panier
 {
     background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-position: 0 -40%;
+    background-position: 0 -20%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -898,5 +907,64 @@ input[id="loupe"]
     #bloc_page
     {
         width: auto;
+        margin-top: 30px;
+    }
+
+    #destock
+    {
+        display: none;
+    }
+
+    #mobile
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu
+    {
+        display: grid;
+        width: 300px;
+    }
+
+    #menu a
+    {
+        display: flex;
+    }
+
+    a[href="Reservia.html"]
+    {
+        grid-column: 1;
+        grid-row: 1;
+        padding-bottom: 25px;
+    }
+
+    #inscription_mobile
+    {
+        justify-content:flex-end ;
+        margin-top: 15px;
+        grid-column: 2;
+        grid-row: 1;
+        font-weight: bold;
+        color: #0065FC;
+    }
+
+    a[href="#anchor_logements"]
+    {
+        justify-content: center;
+        grid-column: 1;
+        grid-row: 2;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
+        color: #0065FC;
+    }
+
+    a[href="#anchor_activités"]
+    {
+        justify-content: center;
+        grid-column: 2;
+        grid-row: 2;
+        padding-bottom: 20px;
     }
 }
